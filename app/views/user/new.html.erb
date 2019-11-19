@@ -1,7 +1,11 @@
-<%= form_for :user, url: '/users' do |f| %>
-Name: <%= f.text_field :name %>
-Password: <%= f.password_field :password %>
-Password Confirmation: <%= f.password_field :password_confirmation %>
+<h1>Signup</h1>
+<%= form_for :user, url: '/signup' do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :password %>
+<%= f.password_field :password %>
+<%= f.label :password_confirmation %>
+<%= f.password_field :password_confirmation %>
 
-<%= f.submit "Submit" %>
+<%= f.submit %>
 <% end %>

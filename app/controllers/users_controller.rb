@@ -1,7 +1,18 @@
 class UsersController < ApplicationController
 
+  def new
+    @user = User.new
+  end
+
   def create
-    User.create(user_params)
+    @user = User.new(user_params)
+    if @user.valid?
+      @user.save
+      session[:user_id] = @user.id
+      redirect_to '/'
+    else
+      redirect_to :signup
+    end
   end
 
   private
