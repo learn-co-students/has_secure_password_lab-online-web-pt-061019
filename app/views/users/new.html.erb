@@ -1,7 +1,12 @@
-<%# app/views/user/new.html.erb %>
-<%= form_for :user, url: '/login' method: :post do |f| %>
-  Name: <%= f.text_field :name %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
+<%= form_for :user, url: login_path, method: :post do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :password %>
+ <%= f.password_field :password %><br>
+
+ <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+
   <%= f.submit "Submit" %>
 <% end %>
