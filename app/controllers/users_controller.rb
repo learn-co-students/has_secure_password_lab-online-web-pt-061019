@@ -12,6 +12,9 @@ class UsersController < ApplicationController
     else
       redirect_to new_user_path
     end
+
+    #should also redirect to user homepage here
+
     #redirects you if password and confirmation don't match. Probably using #authenticate
     # @user = User.create(user_params)
     # session[:user_id] = @user.id
