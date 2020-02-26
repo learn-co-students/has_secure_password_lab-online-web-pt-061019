@@ -1,0 +1,19 @@
+current directory: /Users/agomez/code/has_secure_password_lab-online-web-pt-061019/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+/Users/agomez/.rbenv/versions/2.6.4/bin/ruby -I /Users/agomez/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20200225-47067-mz39yn.rb extconf.rb
+creating Makefile
+
+current directory: /Users/agomez/code/has_secure_password_lab-online-web-pt-061019/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/agomez/code/has_secure_password_lab-online-web-pt-061019/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/agomez/code/has_secure_password_lab-online-web-pt-061019/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20200225-47067-1j3lc4t/byebug
